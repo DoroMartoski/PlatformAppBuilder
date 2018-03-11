@@ -13,7 +13,7 @@ Person account can be linked to assets and cases.
 relationship between a person account and contact.
 * Custom objects with relationships to either accounts or contacts can be added as related lists on person accounts.
 * Person accounts are not supported in data.com
-* Person accounts are supported in desktop integration, pardot and duplicate management, process builders.
+* Person accounts are supported in desktop integration, pardot and duplicate management, process builders, workflow rule and visual workflows.
 * You can send list emails to person accounts from contact list view in lightning or individual or group emails in classic.
 * Leads that do not have a value in the company field are converted into person accounts.
 * Users can make and receive calls for person accounts with lightning dialer.
@@ -26,4 +26,8 @@ lightning and "Recently Viewed Contacts" on the contacts hoem page in lightning.
 * Person accounts components can be included in both managed and unmanaged packages
 * Person accounts have different page layouts.
 * Partners related list can be used to relate person accounts to each other.
-*
+* You can change a person account's record type to a business account's record type or vice versa only through the API.
+* Emails and events can be automatically logged  for person account using Eintsein Activity capture - however Account Insighs and automated
+contacts are currently only available for business accounts and contacts.
+* Person accounts can beshared using Salesforce to salesforce.
+* Person accounts can be linked to social network profiles.
