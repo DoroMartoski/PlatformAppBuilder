@@ -1,0 +1,68 @@
+External Services Feature:
+	* Use External Services to connect to an outside service, 
+	* invoke methods based on the external source via a flow
+	* import the service data into Salesforce
+	
+Record Security features:
+	* Lead and contact details can be kept private even when added to campaigns
+	* this will allow your marketing team to see only the campaign member details you want them to
+	* sharing rules for campaign members can inherit from lead and contact rules or from the campaign.
+	* To let users see only the campaign members whose lead or contact records they have access to, choose Controlled by Lead or Contact in Sharing Settings.
+	* To let users who have access to a campaign see campaign member details, choose Controlled by Campaign
+	* Access that’s provided by a user’s role or profile supersedes the organization-wide defaults.
+	
+Customization Options for Process Builder:
+	* you can now find org name and ID in error emails to help identify the org.
+	
+Troubleshooting for Process Builder:
+	* 4 additional debug logs to help identify and troubleshoot governor limits and bulkification in flows and processes.
+	* FLOW_BULK_ELEMENT_LIMIT_USAGE - Identifies usage against per-transaction governor limits by the element executed in bulk. (FINER and above)
+	* FLOW_BULK_ELEMENT_NOT_SUPPORTED - Identifies when an element couldn’t be bulkified because the associated object doesn’t support bulk operations. (INFO and above)
+	* FLOW_ELEMENT_LIMIT_USAGE - Identifies usage against per-transaction governor limits by the flow element. (FINER and above)
+	* FLOW_START_INTERVIEW_LIMIT_USAGE - Identifies usage against per-transaction governor limits when starting the flow interview and before executing flow elements. (FINER and above)
+	
+Lightning Guided Engagement in Console:
+	* Guide agents through multi-step actions, such as call scripts, right inside the console.
+	* A list of ordered flows keep the process moving during agent handoffs—customers don’t have to repeat themselves because agents know exactly where to pick up.
+	* For folks using Live Agent chat, a new pinned region template lets your agents view the chat and list of flows at the same time.
+	* The Guided Action List helps your agents provide consistent quality customer service across all your channels. Business processes, including stages for your flows, are displayed to your agents in a clear Action List.
+	* flows can be configured for each channel and which agent should complete first and last with pinned flows.
+	* Agents can also add flows based on customer needs.
+	* The flows can be presented as primary tabs or subtabs in console app.
+	* New "RecordAction" junction object associates records to flows using Salesforce automation tools.
+	* Flow is launched as subtab on records that has associated flow opened.
+	* Use the Cloud Flow Designer to create the flow then use Process Builder to add processes that associate records with the flow using the "RecordAction" junction object.
+	* Add the Guided Action List component to pages using Lightning App Builder.
+	
+Mobile Features:
+	* Get rich text in mobile
+	* Rich text can be formatted in both the Chatter publisher and record detail pages for mobile.
+	
+Reports and Dashboard Folders:
+	* Easily organize your reports and dashboards in Lightning Experience
+	* Use subfolders to quickly create a logical structure for your reports and dashboard folders.
+	* Report or dashboard folder => New Folder => Name => Save.
+	* Subfolders must be emptied before being deleted and parent folders must have their subfolders deleted before being deleted.
+	* Use "Move" to move a report or dashboard to another folder through a row-level action.
+	* Enhanced folder sharing must be enabled to use report and dashboard folders and subfolders.
+	* Subfolders can be created only in user-created folders. You can’t create a subfolder in your Private folder or the Public folder.
+	* Folder sharing is only at the root level. If you want to share a subfolder, you must share its root folder.
+	* Everyone can see who has access to a subfolder, but if you want to change sharing settings you must do that at the root level.
+	
+Dashboard Subscriptions:
+	* You can now add dashboard subscriptions for others in Lightning Experience.
+	* Adding other people as subscribers is a perfect way to share updated dashboards on a regular schedule. Everyone you designate gets the same information and visuals at the same time every day, week, or month.
+	* Subscribers must have view access to the dashboard
+	* Each person in your org can subscribe to up to 5 dashboards
+	* You can subscribe to filtered dashboards, but dashboard filters are never applied to emailed dashboards.
+	* Dashboards that are configured to display data as The dashboard viewer under View Dashboard As settings in Dashboard Properties don’t support subscriptions. You can’t subscribe to them
+	
+	
+Work with Flow:
+
+New Assignment Operators:
+	* new assignment operators that make it easier to manipulate collection variables and the $Flow.ActiveStages system variable.
+	* you can easily remove specified items and truncate collections and active stages
+	* You can count the number of collection items or active stages and store that number in a variable
+	* You can add items to the beginning instead of only the end
+	* you no longer need Apex code or loops to perform these operations on collections.
